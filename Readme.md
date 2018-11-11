@@ -7,3 +7,5 @@ sudo vim /etc/systemd/resolved.conf 设置dns
 cat /etc/crontab
 */1 *	* * *	root	/root/run_aliyun_ddns.sh
 
+文件共享目录  shareDir
+9095 owncloud  端口
