@@ -16,4 +16,8 @@ cat /etc/crontab
 192.168.3.214  操作 功能验证 使用   ubuntu 18.04 的虚拟机
 
 192.168.3.242  主要是作为服务器 文件服务器 使用，虚拟机服务器使用
+               主要要用docker 来实现服务器功能
 
+
+mount -o nolock  -t nfs 192.168.3.242:/nfs /mnt
+mount -o nolock  -t nfs 192.168.100.1:/nfs /mnt/eShare
