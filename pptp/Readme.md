@@ -190,7 +190,7 @@ sudo service pptpd restart
 
 
 
- pppd call connectvpn
+ pppd call connect vpn
 
 
 pptpsetup --create myvpn --server qq.sinzuo.com --username jiang --password 123&abc --encrypt --start
