@@ -64,4 +64,44 @@ warning: You appear to have cloned an empty repository.
 git clone ssh://git@qq.sinzuo.com:12345/gitServer/tools/sample.git
 
 
-git clone git@192.168.3.242/gitServer/tools/sample.git
+git clone git@192.168.3.242:/gitServer/tools/sample.git
+
+添加 远程库
+git remote add origin git@192.168.3.242:/gitServer/tools/sample.git
+
+git push --mirror git@192.168.3.242:/gitServer/tools/sample.git
+
+git init --bare ubuntu1804config.git
+git push --mirror git@192.168.3.242:/gitServer/ubuntu1804config
+
+1、建立新仓库
+1). 从原地址克隆一份裸版本库，比如原本托管于 GitHub，或者是本地的私有仓库
+git clone --bare git://192.168.10.XX/git_repo/project_name.git
+2). 然后到新的 Git 服务器上创建一个新项目，比如 GitCafe，亦或是本地的私有仓库，如192.168.20.XX
+su - git
+cd /path/to/path/
+mkdir new_project_name.git
+git init --bare new_project_name.git
+3). 以镜像推送的方式上传代码到 GitCafe 服务器上。
+请确保已经添加了公钥到新的机器上
+cd project_name.git
+git push --mirror git@192.168.20.XX/path/to/path/new_project_name.git
+4). 删除本地代码
+cd ..
+rm -rf project_name.git
+5). 到新服务器上找到 Clone 地址，直接Clone到本地就可以了。
+git clone git@192.168.20.XX/path/to/path/new_project_name.git
+这种方式可以保留原版本库中的所有内容。
+
+2、切换remote_url
+先查看remote的名字
+
+git branch -r
+假设你的remote是origin，用git remote set_url 更换地址
+
+git remote set-url origin remote_git_address
+remote_git_address更换成你的新的仓库地址。
+
+第二种切换remote_url的方法更直接，直接更改.git/conf配置文件里的ip地址就行。
+
+

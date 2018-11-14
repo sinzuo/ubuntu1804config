@@ -21,3 +21,6 @@ cat /etc/crontab
 
 mount -o nolock  -t nfs 192.168.3.242:/nfs /mnt
 mount -o nolock  -t nfs 192.168.100.1:/nfs /mnt/eShare
+
+docker 运行可以指定目录 直接运行
+make -f myDocker/jybdockerfiles/TServ/Makefile run
