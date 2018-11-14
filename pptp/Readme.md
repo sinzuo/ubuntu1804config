@@ -198,3 +198,8 @@ pptpsetup --create myvpn --server qq.sinzuo.com --username jiang --password 123&
 sudo pon myvpn
 
 sudo poff myvpn
+
+添加路由
+vim /etc/ppp/ip-up
+
+sudo route add -net 192.168.100.0/24 gw 192.168.100.1
