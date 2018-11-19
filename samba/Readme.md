@@ -1,0 +1,1 @@
+mount -t nfs 192.168.3.242:/nfs /mnt/nfsShare
