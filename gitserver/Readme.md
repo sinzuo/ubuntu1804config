@@ -73,6 +73,7 @@ git push --mirror git@192.168.3.242:/gitServer/tools/sample.git
 
 git init --bare ubuntu1804config.git
 git push --mirror git@192.168.3.242:/gitServer/ubuntu1804config
+git push --mirror git@192.168.3.242:/gitServer/openwrtglibx86
 
 1、建立新仓库
 1). 从原地址克隆一份裸版本库，比如原本托管于 GitHub，或者是本地的私有仓库

@@ -35,3 +35,18 @@ lrwxrwxrwx   1 root root    24 11月 15 11:11 /shareDir9091 -> /mnt/dShare/share
 curlpost.sh testServer
 
 scp -P 12345 qemu-guest-agent-2.3.0-4.el7.x86_64.rpm root@10.10.10.11:/shareDir9091
+
+http://github.com/sinzuo/7628rombuild
+http://github.com/sinzuo/pifiirom
+http://github.com/sinzuo/mipshttppost
+http://github.com/sinzuo/myDocker
+http://github.com/sinzuo/golangTest
+http://github.com/sinzuo/TServ
+
+同步
+rsync -avz -e ssh      dl/   root@192.168.3.242:/mnt/dShare/openwrtDir/dl/
+查看日志
+pon myvpn debug dump logfd 2 nodetach
+
+x86 固件 多功能
+https://github.com/coolsnowwolf/lede.git
