@@ -83,6 +83,6 @@ package/base-files/files/bin/config_generate
 --------------------------------------------- 
 作者：jiang_yi_bo 
 来源：广州芯卓信息科技有限公司
-原文：https://blog.sinzuo.com//article/
+原文：http://blog.sinzuo.com/article/
 版权声明：本文为博主原创文章，转载请附上博文链接！
 --------------------------------------------- 
