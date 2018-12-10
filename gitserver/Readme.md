@@ -74,6 +74,10 @@ git push --mirror git@192.168.3.242:/gitServer/tools/sample.git
 git init --bare ubuntu1804config.git
 git push --mirror git@192.168.3.242:/gitServer/ubuntu1804config
 git push --mirror git@192.168.3.242:/gitServer/openwrtglibx86
+git push --mirror git@192.168.3.242:/gitServer/openwrtlede
+
+git init --bare openwrt_ac.git
+git push --mirror git@192.168.3.242:/gitServer/openwrt_ac.git
 
 1、建立新仓库
 1). 从原地址克隆一份裸版本库，比如原本托管于 GitHub，或者是本地的私有仓库
@@ -106,3 +110,21 @@ remote_git_address更换成你的新的仓库地址。
 第二种切换remote_url的方法更直接，直接更改.git/conf配置文件里的ip地址就行。
 
 
+# 删除 untracked files
+git clean -f
+ 
+# 连 untracked 的目录也一起删掉
+git clean -fd
+ 
+# 连 gitignore 的untrack 文件/目录也一起删掉 （慎用，一般这个是用来删掉编译出来的 .o之类的文件用的）
+git clean -xfd
+ 
+# 在用上述 git clean 前，墙裂建议加上 -n 参数来先看看会删掉哪些文件，防止重要文件被误删
+git clean -nxfd
+git clean -nf
+git clean -nfd
+
+项目说明
+openwrt_ac.git 
+openwrtglibx86    openwrt网站上下载最新版本openwrt 自己编译x86固件
+openwrtlede.git   网友提供全功能lede固件

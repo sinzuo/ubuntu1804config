@@ -1,3 +1,10 @@
+--------------------------------------------- 
+作者：jiang_yi_bo 
+来源：广州芯卓信息科技有限公司
+原文：https://blog.sinzuo.com//article/
+版权声明：本文为博主原创文章，转载请附上博文链接！
+--------------------------------------------- 
+
 openwrt 开源地址
 https://github.com/openwrt/openwrt
 
@@ -79,10 +86,8 @@ eth0      Link encap:Ethernet  HWaddr 02:42:AC:11:00:02
 
 package/base-files/files/bin/config_generate
 
+hc5661a    适配 7628
+whr-300hp2 适配 7620
+newifi d1  适配 7621
 
---------------------------------------------- 
-作者：jiang_yi_bo 
-来源：广州芯卓信息科技有限公司
-原文：https://blog.sinzuo.com//article/
-版权声明：本文为博主原创文章，转载请附上博文链接！
---------------------------------------------- 
+
