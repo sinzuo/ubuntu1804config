@@ -128,3 +128,18 @@ git clean -nfd
 openwrt_ac.git 
 openwrtglibx86    openwrt网站上下载最新版本openwrt 自己编译x86固件
 openwrtlede.git   网友提供全功能lede固件
+
+
+推送本地分支local_branch到远程分支 remote_branch并建立关联关系
+
+      a.远程已有remote_branch分支并且已经关联本地分支local_branch且本地已经切换到local_branch
+
+          git push
+
+     b.远程已有remote_branch分支但未关联本地分支local_branch且本地已经切换到local_branch
+
+         git push -u origin/remote_branch
+
+     c.远程没有有remote_branch分支并，本地已经切换到local_branch
+
+        git push origin local_branch:remote_branch
