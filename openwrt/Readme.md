@@ -79,6 +79,12 @@ eth0      Link encap:Ethernet  HWaddr 02:42:AC:11:00:02
 
 package/base-files/files/bin/config_generate
 
+CONFIG_TARGET_PROFILE=
+
+./include/target.mk:PROFILE?=$(call qstrip,$(CONFIG_TARGET_PROFILE))
+
+dts 目录
+target/linux/ramips/dts
 
 --------------------------------------------- 
 作者：jiang_yi_bo 
