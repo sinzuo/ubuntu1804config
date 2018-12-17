@@ -1,3 +1,10 @@
+--------------------------------------------- 
+作者：jiang_yi_bo
+来源：广州芯卓信息科技有限公司
+口号: all in onekey 【一切在一键】
+网址：http://blog.sinzuo.com/article/
+--------------------------------------------- 
+版权声明：本文为博主原创文章，转载请附上博文链接！
 openwrt 开源地址
 https://github.com/openwrt/openwrt
 
@@ -79,16 +86,17 @@ eth0      Link encap:Ethernet  HWaddr 02:42:AC:11:00:02
 
 package/base-files/files/bin/config_generate
 
+<<<<<<< HEAD
 CONFIG_TARGET_PROFILE=
 
 ./include/target.mk:PROFILE?=$(call qstrip,$(CONFIG_TARGET_PROFILE))
 
 dts 目录
 target/linux/ramips/dts
+=======
+hc5661a    适配 7628
+whr-300hp2 适配 7620
+newifi d1  适配 7621
 
---------------------------------------------- 
-作者：jiang_yi_bo 
-来源：广州芯卓信息科技有限公司
-原文：http://blog.sinzuo.com/article/
-版权声明：本文为博主原创文章，转载请附上博文链接！
---------------------------------------------- 
+>>>>>>> a5c2aeb031d17aa7cf54398d886322d2a2c06162
+
