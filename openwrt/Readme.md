@@ -91,3 +91,8 @@ whr-300hp2 适配 7620
 newifi d1  适配 7621
 
 
+Proxifier  全局代理
+
+polipo     全局代理
+
+https://blog.csdn.net/u013286409/article/details/51481836
