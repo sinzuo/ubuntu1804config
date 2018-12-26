@@ -125,7 +125,7 @@ git clean -nf
 git clean -nfd
 
 项目说明
-openwrt_ac.git 
+openwrt_ac.git    公司ac
 openwrtglibx86    openwrt网站上下载最新版本openwrt 自己编译x86固件
 openwrtlede.git   网友提供全功能lede固件
 

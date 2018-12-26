@@ -105,3 +105,7 @@ Proxifier  全局代理
 polipo     全局代理
 
 https://blog.csdn.net/u013286409/article/details/51481836
+
+
+
+/sbin/wifi  reload_legacy
