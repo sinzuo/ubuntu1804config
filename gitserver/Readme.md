@@ -76,6 +76,8 @@ git push --mirror git@192.168.3.242:/gitServer/ubuntu1804config
 git push --mirror git@192.168.3.242:/gitServer/openwrtglibx86
 git push --mirror git@192.168.3.242:/gitServer/openwrtlede
 
+git push --mirror https://github.com/sinzuo/lede-openwrt-7628.git
+
 git init --bare openwrt_ac.git
 git push --mirror git@192.168.3.242:/gitServer/openwrt_ac.git
 

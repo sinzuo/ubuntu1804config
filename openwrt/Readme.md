@@ -109,3 +109,8 @@ https://blog.csdn.net/u013286409/article/details/51481836
 
 
 /sbin/wifi  reload_legacy
+
+
+ubus list -v
+
+ubus call network.interface.wan status
