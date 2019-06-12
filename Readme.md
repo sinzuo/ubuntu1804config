@@ -1,15 +1,15 @@
 --------------------------------------------- 
-作者：jiang_yi_bo
-来源：广州芯卓信息科技有限公司
+作者：jiang_yi_bo 
+来源：广州芯卓信息科技有限公司 
 口号: all in onekey 【一切在一键】
-网址：http://blog.sinzuo.com/article/
+网址：http://blog.sinzuo.com/article/ 
 --------------------------------------------- 
 
 用户名  sinzuo  密码 sinzuo@abc
 
-文件服务器  端口           9091
-文件服务器2 管理   端口     9092
-文件服务器5 管理   端口     9095   owncloud
+文件服务器  端口           9091 
+文件服务器2 管理   端口     9092 
+文件服务器5 管理   端口     9095   owncloud 
 
 sudo vim /etc/resolvconf/resolv.conf.d/head 设置dns
 添加
